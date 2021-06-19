@@ -6,7 +6,7 @@
 		<title>Network</title>
 		<nav class = "header">
 			<div class = "menu">
-				<a href = "indexhackathon.html"><img src = "logo.png"></a>
+				<a href = "indexhackathon.html"></a>
 				<ul>
 					<li><a href = "indexhackathon.html">Home</a></li>
 					<li><a href = "learn.html">Learn</a></li>
@@ -91,8 +91,31 @@
 			padding: 10px 20px;
 			cursor: pointer;
 		}
+			/*#response{
+			font-family: verdana;	
+		}
+		button {
+			background: rgb(164, 61, 66);
+			border: none;
+			transition: all 300ms linear;
+			font-family: Trebuchet MS;
+			color: white;
+			padding: 10px 20px;
+			cursor: pointer;
+		}
+		button:hover{
+			background: rgb(240, 61, 66);
+			border: none;
+			transform: scale(1.05, 1.05);
+			color: white;
+			padding: 10px 20px;
+			cursor: pointer;
+		}*/		
 	</style>
 	<body>
+	<!-- 	<p id = "response"></p> //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
+		<button onclick ="myFunction()">NETWORK</button>
+		<button onclick ="applyFunction()" >APPLY</button> -->
 	</body>
 	<footer>
 		<hr size = "2" width = "100%" color = "black"> </hr>
@@ -101,6 +124,17 @@
 			<div class = "footer-item">Want to tell us your experience with networking on Network-Us? Fill out this form. We 
 				appreciate your feedback!</div>
 			<div class ="footer-item">Message<p><textarea rows="15" cols="70"></textarea></p></div>
-			</div>
+			<div><form><input type ="submit" value = "Submit"/></form></div>			
+</div>
 	</footer>
+	<!-- <script> //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
+		function myFunction()
+		{
+			document.getElementById("response").innerHTML = "I'd love to network!";
+		}
+		function applyFunction()
+		{
+			document.getElementById("response").innerHTML = "Thank you for your interest!";
+		}
+	</script> -->
 </html>
