@@ -110,10 +110,10 @@
 				cursor: pointer;
 			}
 			textarea {
-				font-family: "Verdana", sans-serif;
+				font-family: "Verdana", san-serif;
 				font-weight: 200;
 				border: none;
-				padding: 5px 10px;
+				padding: 3px 10px;
 				background: rgb(164, 61, 66);
 				color: rgb(215, 255, 255);
 				cursor: text;
@@ -179,9 +179,11 @@
 						<div id ="article-header">SEND US A MESSAGE</div>						
 						<div class ="article-item">Name<p><input type= "text"/></p></div>
 						<div class ="article-item">Email<p><input type="email" id="email" name="email"/></p></div>
-						<div class ="article-item">Message<p><textarea rows="15" cols="70"></textarea></p></div>
+						<div>		
+							<label id= "article-item" for="message"><p>Message</p></label>				
+							<textarea rows ="10" cols ="50" input id ="message"/></textarea><p></p></div>
 						<div class = "cb"><input type="checkbox" id="resume" name="resume" value="Resume"> <label for="resume"> I would like a resume assessement</label><br></br></div>
-						<div><form><input type ="submit" value = "Submit"/></form></div>
+						<div><form><input type ="submit" value = "Submit" onclick="displayFeedback()"/></form></div>
 					</div>
 					<div class = "social-media">
 					<div id = "media-header"> Follow Us</div> 
@@ -206,5 +208,10 @@
 					</div>
 			</footer>
 		</body>
-
+		<script>
+			var feedback = " ";
+			function displayFeedback() {
+			alert("Thanks for the feedback! Here's what we got: " +document.getElementById("message").value);
+		}
+		</script>
 	</html>
