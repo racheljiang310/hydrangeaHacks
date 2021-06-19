@@ -79,7 +79,7 @@
 			font-family: "Verdana", san-serif;
 			font-weight: 200;
 			border: none;
-			padding: 5px 10px;
+			padding: 3px 10px;
 			background: rgb(164, 61, 66);
 			color: rgb(215, 255, 255);
 			cursor: text;
@@ -90,6 +90,11 @@
 			color: rgb(215, 255, 255);
 			padding: 10px 20px;
 			cursor: pointer;
+		}
+		#user-input {
+			font-family: Trebuchet MS;
+			padding: 10px 10px;
+			color: white;
 		}
 			/*#response{
 			font-family: verdana;	
@@ -122,12 +127,14 @@
 		<div class = "footer"> 
 			<div id = "footer-title">Give Us Feedback!</div>
 			<div class = "footer-item">Want to tell us your experience with networking on Network-Us? Fill out this form. We 
-				appreciate your feedback!</div>
-			<div class ="footer-item">Message<p><textarea rows="15" cols="70"></textarea></p></div>
+				appreciate your feedback!</div>	
+			<div class = "form">		
+			<label id= "footer-item" for="user-input"><p>Message</p></label>				
+			<textarea rows ="5" cols ="40" input id ="user-input"/></textarea><p></p></div>
 			<div><form><input type ="submit" value = "Submit"/></form></div>			
 </div>
 	</footer>
-	<!-- <script> //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
+	<script> <!-- //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
 		function myFunction()
 		{
 			document.getElementById("response").innerHTML = "I'd love to network!";
@@ -135,6 +142,10 @@
 		function applyFunction()
 		{
 			document.getElementById("response").innerHTML = "Thank you for your interest!";
+		} -->
+		var feedback = " ";
+		function displayFeedback() {
+			alert("Thanks for the feedback! Here's what we got: " +document.getElementById("user-input").value);
 		}
-	</script> -->
+	</script> 
 </html>
