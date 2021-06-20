@@ -4,32 +4,14 @@
 			<meta charset="UTF-8">
 			<meta name ="window-2" content = "contact us">
 			<title>Contact Us</title>
-			<nav class = "header">
-				<div class = "menu">
-				<a href = "indexhackathon.html"><img src = "logo.png"></a>
-				<ul>
-					<li><a href = "indexhackathon.html">Home</a></li>
-					<li><a href = "learn.html">Learn</a></li>
-					<li><a href = "find-jobs.html">Network</a></li>
-					<li><a href = "about-us.html">About Us</a></li>
-					<li><a href = "contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<hr size = "2" width = "100%" color = "black"> </hr>
 		</head>
 		<style type="text/css">
-			.header{
-				min-height:  20vh;
-				width:  100%;
-				background: rgb(215, 255, 255);
-				background-size:  cover;
-				position:  relative;
-				background-position:  center;
-			}
+
 			.menu ul{
 				display:  inline-flex;
 				margin:  50px;
 			}
+
 			.menu li{
 				list-style:  none; 
 				margin:  0 30px;
@@ -37,20 +19,23 @@
 				color:  darkslategray;
 				cursor:  pointer;
 			}
+
 			.menu ul li a{
-				color:  rgb(57, 21, 2);
+				color:  rgb(164, 61, 66);
 				text-decoration:  none;
 				font-size:  14px;
 			}
+
 			.menu ul li::after{
 				content:  '';
 				width:  0%;
 				height: 4px;
 				transition: 0.2s;
-				background: rgb(215, 255, 255);
+				background: red;
 				display: block;
 				margin: auto;
 			}
+
 			.menu ul li:hover::after{
 				width: 100%;
 			}
@@ -168,11 +153,21 @@
 			}
 		</style>
 		<body>
-			<header>
-				<h1 class = "title">Contact</h1>
-				<hr size = "2" width = "100%" color = "black"> </hr>
-				<hr size = "1" width = "100%" color = "black"> </hr>
-			</header>	
+		<section class = "header">
+			<nav>
+				<div class = "menu">
+					<ul>
+						<li><a href = "indexhackathon.html">Home</a></li>
+						<li><a href = "learn.html">Learn</a></li>
+						<li><a href = "find-jobs.html">Network</a></li>
+						<li><a href = "about-us.html">About Us</a></li>
+						<li><a href = "contact.html">Contact</a></li>
+
+					</ul>
+				</div>
+			</nav>
+
+
 			<main>
 				<nav class = "bar" >
 					<div id = "article">
