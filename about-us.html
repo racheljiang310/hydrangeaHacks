@@ -6,7 +6,7 @@
 			<title>About Us</title>
 			<nav class = "header">
 				<div class = "menu">
-				<a href = "indexhackathon.html"><img src = "logo.png"></a>
+				<a href = "indexhackathon.html"></a>
 				<ul>
 					<li><a href = "indexhackathon.html">Home</a></li>
 					<li><a href = "learn.html">Learn</a></li>
@@ -15,13 +15,16 @@
 					<li><a href = "contact.html">Contact</a></li>
 				</ul>
 			</nav>
-			<hr size = "2" width = "100%" color = "black"> </hr>
 		</head>
 		<style type="text/css">
+			*{
+				margin:  0;
+				padding: 0;
+			}
 			.header{
 				min-height:  20vh;
 				width:  100%;
-				background: rgb(215, 255, 255);
+				background-image:  linear-gradient(rgba(0,0,0, 0.76),rgba(0,0,0, 0.76)), url(https://www.ie.edu/insights/wp-content/uploads/2017/06/Networking-la-guinda-de-un-buen-curriculum-o-idea-de-negocio.jpg);
 				background-size:  cover;
 				position:  relative;
 				background-position:  center;
@@ -38,7 +41,7 @@
 				cursor:  pointer;
 			}
 			.menu ul li a{
-				color:  rgb(57, 21, 2);
+				color:  floralwhite;
 				text-decoration:  none;
 				font-size:  14px;
 			}
@@ -55,7 +58,7 @@
 				width: 100%;
 			}
 			.title {
-				background: rgb(57, 21, 2);
+				background: rgb(164, 61, 66);
 				color: rgb(215, 255, 255);
 				padding: 20px;
 				font-family: "Verdana" , san-serif;
@@ -81,9 +84,11 @@
 				align-content: flex-start;
 				font-family: "Verdana" , san-serif;
 				font-weight: 400;
+				padding: 30px 0px 10px 0px;	
 			}
 			#article {	
 				width: 80%;
+				font-family: verdana;
 				display: flex;
 				flex-direction: column;
 				padding: 0px 0px 10px 0px;	
@@ -94,19 +99,19 @@
 				padding: 0px 0px 30px 0px;
 			}
 			.article-item {	
-				font-weight: 200;
+				font-weight: 600;
 				font-size: 100%;
 			}
 			.paragraphs {
 				font-weight: 100;
 				font-size: 80%;
-				padding: 0px 0px 10px 0px;	
+				padding: 8px 0px 20px 0px;	
 			}
 			.social-media {
 				width: 10%;
 				display: flex;
 				flex-direction: column;
-				padding:0px 0px 5px 0px;
+				padding: 0px 0px 10px 0px;
 			}
 			#media-header {
 				font-weight: 700;
@@ -140,13 +145,12 @@
 		<body>
 			<header>
 				<h1 class = "title">About Us</h1>
-				<hr size = "2" width = "100%" color = "black"> </hr>
-				<hr size = "1" width = "100%" color = "black"> </hr>
+		
 			</header>	
 			<main>
 				<nav class = "bar" >
 					<div id = "article">
-						<div id ="article-header">INFORMATION</div>						
+						<div id ="article-header">Information</div>						
 						<div class ="article-item">Meet the Founders <p class = "paragraphs">Hello! We are co-founders Aditi Phatak and Rachel Jiang
 							[Insert company title] is our first start-up website. We both went to Monta Vista High School, Cupertino CA and are going
 							 to be undergraduates at the UCSB. We are passionate in entrepreneurship, computer science, and economics.</p></div>
@@ -163,13 +167,13 @@
 					</div>
 					<div class = "social-media">
 					<div id = "media-header"> Follow Us</div> 
-					<div class = "media-icon"><a href= "https://www.facebook.com/"><img src='https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png' width = 40%
+					<div class = "media-icon"><p>Facebook</p><a href= "https://www.facebook.com/"><img src='https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png' width = 40%
 					 alt = "not found"></a></div> 
-					<div class = "media-icon"><a href= "https://www.instagram.com/"><img src='https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg' width = 40%
+					<div class = "media-icon"><p>Instagram</p><a href= "https://www.instagram.com/"><img src='https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg' width = 40%
 					 alt = "not found"></a></div> 
-					<div class = "media-icon"><a href= "https://www.linkedin.com/"><img src='https://www.fpsa.org/wp-content/uploads/linkedin-logo-copy.png' width = 40%
+					<div class = "media-icon"><p>LinkedIn</p><a href= "https://www.linkedin.com/"><img src='https://www.fpsa.org/wp-content/uploads/linkedin-logo-copy.png' width = 40%
 					 alt = "not found"></a></div> 
-					<div class = "media-icon"><a href= "https://github.com/"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png' width = 40%
+					<div class = "media-icon"><p>GitHub</p><a href= "https://github.com/"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png' width = 40%
 					 alt = "not found"></a></div> 
 					</div>
 				</nav>
