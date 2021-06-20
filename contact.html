@@ -66,6 +66,7 @@
 				align-content: flex-start;
 				font-family: "Verdana" , san-serif;
 				font-weight: 400;
+				padding: 0px 20px 0px 20px;
 			}
 			
 
@@ -73,7 +74,6 @@
 				width: 70%;
 				display: flex;
 				flex-direction: column;
-				padding: 0px 0px 10px 0px;
 				font-family: "Verdana", san-serif;	
 			}
 			#article-header{
@@ -173,12 +173,12 @@
 					<div id = "article">
 						<div id ="article-header">SEND US A MESSAGE</div>						
 						<div class ="article-item">Name<p><input type= "text"/></p></div>
-						<div class ="article-item">Email<p><input type="email" id="email" name="email"/></p></div>
-						<div>		
-							<label id= "article-item" for="message"><p>Message</p></label>				
-							<textarea rows ="10" cols ="50" input id ="message"/></textarea><p></p></div>
+						<div class ="article-item">Email<p><input type="email" id="email" name="email"/></p></div>	
+						<div class= "article-item"><p>Message</p>				
+						<textarea rows ="10" cols ="50" input id ="message"/></textarea><p></p></div>
 						<div class = "cb"><input type="checkbox" id="resume" name="resume" value="Resume"> <label for="resume"> I would like a resume assessement</label><br></br></div>
 						<div><form><input type ="submit" value = "Submit" onclick="displayFeedback()"/></form></div>
+						
 					</div>
 					<div class = "social-media">
 					<div id = "media-header"> Follow Us</div> 
