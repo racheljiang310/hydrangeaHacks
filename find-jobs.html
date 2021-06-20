@@ -1,4 +1,5 @@
 <!DOCTYPE html> 
+<!DOCTYPE html> 
 	<html> 
 	<head>
 		<meta charset=”UTF-8”>
@@ -20,17 +21,100 @@
 		
 		
 	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
+	*{
+		margin: 0;
+		padding: 0;
+		box-sixing: border-box;
+		list-style: none;
+	}
+	.container h1{
+		text-align: center;
+		font-weight: 600;
+		font-size: 20px;
+		font-family: verdana;
+		color: rgb(57,21,2);;
+		padding: 40px 0;
+	}
+
+	.wrap .search{
+		max-width: 1400px;
+		background: rgb(164,61,66);
+		margin: 0 auto;
+		padding:  50px 10 40px;
+		border-radius: 4px;
+	}
+
+	.search{
+		width: 98%;
+		border: 0px;
+		border-bottom: 2px solid white;
+		background: transparent;
+		outline: none;
+		font-size: 20px;
+		display: block;
+		padding: 5px;
+		font-family: verdana;
+
+	}
+
+	.container{
+	background-color: white;
+	width: 96%;
+	padding: 20px 15px;
+	text-align: center;
+}
+
+.container h1{
+	margin-bottom: 20px;
+	font-family: verdana;
+	color:rgb(57,21,2);;
+	font-size: 30px;
+}
+
+.container input{
+	width: calc(100% - 16px);
+	color: white;
+	padding: 10px 8px;
+	font-size: 20px;
+	font-family: verdana;
+	margin-bottom: 20px;
+}
+
+.container ul{
+	list-style: none;
+	width: 100%;
+	background-color: rgb(57,21,2);
+}
+
+.container ul li{
+	padding:  14 px 0;
+
+}
+
+.container ul li a{
+	font-size:  30px;
+	line-height: 90px;
+	font-family: verdana;
+	color: white;
+	text-decoration: none;
+}
+
+.container ul li a:hover { 
+	color: dimgray;
+}
+
+.jobs a{
+	font-family: verdana bold;
+	color: rgb(64,64,64);
+}
+
 		.header{
-			min-height:  20vh;
-			width:  100%;
-			background-image:  linear-gradient(rgba(0,0,0, 0.76),rgba(0,0,0, 0.76)), url(https://www.ie.edu/insights/wp-content/uploads/2017/06/Networking-la-guinda-de-un-buen-curriculum-o-idea-de-negocio.jpg);
-			background-size:  cover;
-			position:  relative;
-			background-position:  center;
+		min-height:  20vh;
+		width:  100%;
+		background-image:  linear-gradient(rgba(0,0,0, 0.76),rgba(0,0,0, 0.76)), url(https://www.ie.edu/insights/wp-content/uploads/2017/06/Networking-la-guinda-de-un-buen-curriculum-o-idea-de-negocio.jpg);
+		background-size:  cover;
+		position:  relative;
+		background-position:  center;
 		}
 		.menu ul{
 		display:  inline-flex;
@@ -121,7 +205,35 @@
 			cursor: pointer;
 		}*/		
 	</style>
+	
 	<body>
+			<div class = "wrap">
+				<section class = "jobs">
+				<div class = "container">
+				<h1>Find Jobs</h1>
+ 				<input id="search" onkeyup="searchChange()" type="text" placeholder="Search" class ="search">
+				<ul id = "Menu">
+				<li><a href="https://tesla.talentify.io/job/technical-editor-internship-fall-2021-palo-alto-california-tesla-84882?">Tesla 2021: Technical Editor Internship in Palo Alto</a></li>
+				<li><a href = "https://www.linkedin.com/jobs/view/summer-2021-internship-creative-art-copy-at-kern-an-omnicom-agency-2557483466?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">2021 Internship - Creative in Los Angeles</a></li>
+				<li><a href = "https://addisongroup.com/job-details-page/?entity=469650&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Entry Level Program Assistant in Washington DC</a></li>
+				<li><a href = "https://toolbelt.work/jobs/account-manager-seattle-wa/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Account Manager in Seattle</a></li>
+				<li><a href = "https://jobs.apple.com/en-us/details/200193056/hardware-engineer-entry-level-florida-orlando-melbourne?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Entry Level Hardware Engineer at Apple in Orlando/Melbourne</a></li>
+				<li><a href = "https://www.jobs-ups.com/job/seattle/warehouse-worker-package-handler/1187/224483?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Warehouse Job, Amazon Workforce Staffing in Washington DC</a></li>
+				<li><a href = "https://us.fidanto.com/jobs/job-opening/engineers-all-other/azure-data-engineer-remote-317971984?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Azure Data Engineer in New York</a></li>
+				<li><a href = "https://noorinc.com/job/77/receptionist-adminstrative-assistant/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Administrative Assistant in New York</a></li>
+				<li><a href = "https://www.linkedin.com/jobs/view/customer-service-coordinator-17-00-per-hour-at-penske-logistics-2565131892?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Customer Service Coordinaor in Pennsylvania</a></li>
+				<li><a href = "https://www.linkedin.com/jobs/view/it-audit-manager-at-pearson-2469553323?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">IT Audit Manager in Iowa City, IA</a></li>
+				<li><a href = "https://www.jobs-ups.com/job/seattle/warehouse-worker-package-handler/1187/224483?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Warehouse Job, Amazon Workforce Staffing in West Des Moines, IA</a></li>
+				<li><a href = "https://www.careerbuilder.com/job/J2P4PY6GJSXVWPM688C?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Home Data Entry in Arkansas</a></li>
+				<li><a href = "https://www.verizon.com/about/work/jobs/6849058-business-analyst?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Business Analyst at Verizon in Denver, Colorado</a></li>
+
+			</ul>
+		</div>
+		<script src="searchChange.js" type="text/javascript"></script>
+	</section>
+
+
+		</section>
 	<!-- 	<p id = "response"></p> //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
 		<button onclick ="myFunction()">NETWORK</button>
 		<button onclick ="applyFunction()" >APPLY</button> -->
@@ -135,18 +247,18 @@
 			<div class = "form">		
 			<label id= "footer-item" for="user-input"><p>Message</p></label>				
 			<textarea rows ="5" cols ="40" input id ="user-input"/></textarea><p></p></div>
-			<div><form><input type ="submit" value = "Submit" onclick = "displayFeedback()"/></form></div>			
+			<div><form><input type ="submit" value = "Submit"/></form></div>			
 </div>
 	</footer>
-	<script>  
-		/*function myFunction()
+	<script> <!-- //UNCOMMENT THIS WHEN YOU WANT TO PUT THE BUTTONS IN THE GRID ITEMS LATER
+		function myFunction()
 		{
 			document.getElementById("response").innerHTML = "I'd love to network!";
 		}
 		function applyFunction()
 		{
 			document.getElementById("response").innerHTML = "Thank you for your interest!";
-		} */
+		} -->
 		var feedback = " ";
 		function displayFeedback() {
 			alert("Thanks for the feedback! Here's what we got: " +document.getElementById("user-input").value);
